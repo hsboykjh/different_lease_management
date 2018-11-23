@@ -1,0 +1,24 @@
+.lease-container {
+  width: 100%;
+  margin: 20px;
+}
+.lease-container table {
+  border-collapse: collapse;
+}
+.lease-container table, th {
+  padding: 10px;
+  text-align: center;
+  border: 3px dashed black;
+}
+.lease-container td {
+  padding: 10px;
+  text-align: left;
+  border-width:3px;
+  border-style: none dashed none dashed;
+}
+.lease-container tr:last-child td {
+  border-style: none dashed dashed dashed;
+}
+.lease-container .text-right {
+  text-align: right;
+}

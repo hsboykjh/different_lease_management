@@ -1,0 +1,27 @@
+<div class="lease-container">
+  <table class="table">
+    <thead>
+    <tr>
+      <th>From</th>
+      <th>To</th>
+      <th>Days</th>
+      <th>Amount</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let lease of leaseList">
+      <td>
+        {{lease.from | date: 'MMMM, d'}}{{(lease.from | date: "d") | dateSuffix}}{{(lease.from | date: " y")}}
+      </td>
+      <td>
+        {{lease.to | date: 'MMMM, d'}}{{(lease.to | date: "d") | dateSuffix}}{{(lease.to | date: " y")}}
+      </td>
+      <td class="text-right">
+        {{lease.days}}
+      </td>
+      <td>
+        ${{lease.amount}}
+      </td>
+    </tr>
+  </table>
+</div>
